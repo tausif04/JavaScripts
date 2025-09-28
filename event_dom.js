@@ -11,5 +11,8 @@ function changeText() {
     const el = document.getElementById("myHeader");
     console.log(el);
     el.textContent = "You are Hacked! 😈";
+    el.style.color = "red";
+    el.style.fontSize = "50px";
 }
+
 
