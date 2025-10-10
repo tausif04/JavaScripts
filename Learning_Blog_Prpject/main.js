@@ -151,8 +151,8 @@ function categoryFilter(id) {
                                 ${element.short}
                             </p>
                             <div class="flex items-center justify-between">
-                                <span class="text-sm text-gray-500">Dec 15, 2024</span>
-                                <button onclick="openModal('post-1')"
+                                <span class="text-sm text-gray-500">${element.created_at()}</span>
+                                <button onclick="openModal(${element.id})"
                                     class="text-purple-600 hover:text-purple-700 font-medium inline-flex items-center gap-2 transition-colors">
                                     Read more →
                                 </button>
@@ -208,7 +208,7 @@ fetch('https://basic-blog.teamrabbil.com/api/post-newest').then((response) => re
                                 ${element.short}
                             </p>
                             <div class="flex items-center justify-between">
-                                <span class="text-sm text-gray-500">Dec 15, 2024</span>
+                                <span class="text-sm text-gray-500">${element.created_at()}</span>
                                 <button onclick="openModal(${element.id})"
                                     class="text-purple-600 hover:text-purple-700 font-medium inline-flex items-center gap-2 transition-colors">
                                     Read more →
