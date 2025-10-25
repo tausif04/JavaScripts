@@ -213,7 +213,7 @@ fetch('https://basic-blog.teamrabbil.com/api/post-newest').then((response) => re
                                     class="text-purple-600 hover:text-purple-700 font-medium inline-flex items-center gap-2 transition-colors">
                                     Read more →
                                 </button>
-                            </div>
+                            </div> 
                         </div>
                     </article>`
 
