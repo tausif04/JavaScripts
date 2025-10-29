@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods in JavaScript</title>
+</head>
+
+<body>
+    <h1>String Methods in JavaScript</h1>
+    <p id="result"></p>
+    <script>
+        // Initial string definitions
+        let carName1 = "Volvo XC60";  // Double quotes
+        let carName2 = 'Volvo XC60';  // Single quotes
+        let text = `He's often called "Johnny"`;
+        let length = text.length;
+
+        // Output length of text
+        document.write("Length of text: " + length + "<br>");
+
+        // Char at index 0
+        let char = text.charAt(0);
+        document.write("Character at index 0: " + char + "<br>");
+
+        // Character in a string using index notation
+        const name = "I AM A STUDENT OF CSE";
+        document.write("Character at the 4th position: " + name[4] + "<br>");
+
+        // String Slice
+        let fruits = "Apple, Banana, Kiwi";
+        let part = fruits.slice(7, 13);
+        document.write("Sliced text: " + part + "<br>");
+
+        // String to Upper Case
+        let upperCaseText = text.toUpperCase();
+        document.write("Uppercase text: " + upperCaseText + "<br>");
+
+        // String to Lower Case
+        let lowerCaseText = text.toLowerCase();
+        document.write("Lowercase text: " + lowerCaseText + "<br>");
+
+        // String Replace
+        let replacedText = text.replace("Johnny", "Jack");
+        document.write("Replaced text: " + replacedText + "<br>");
+
+        // Index of a substring
+        let index = text.indexOf("called");
+        document.write("Index of 'called': " + index + "<br>");
+
+        // String Substring
+        let subText = name.substring(5, 11);
+        document.write("Substring of 'name' (5 to 11): " + subText + "<br>");
+    </script>
+</body>
+
+</html>
