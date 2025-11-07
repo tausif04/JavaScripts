@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registration and Validation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <form id="registrationForm" onsubmit="return validateForm()">
+        <fieldset>
+            <legend>
+                <h3>Form Registration</h3>
+            </legend>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name"><br>
+                <span id="nameError" class="error"></span>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email"><br>
+                <span id="emailError" class="error"></span>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password"><br>
+                <span id="passwordError" class="error"></span>
+            </div>
+            <div>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword"><br>
+                <span id="confirmPasswordError" class="error"></span>
+            </div>
+
+            <button type="submit">Register</button>
+        </fieldset>
+    </form>
+
+</body>
+<script src="validation.js"></script>
+
+</html>
