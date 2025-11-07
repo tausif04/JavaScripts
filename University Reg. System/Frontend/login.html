@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form id="loginForm" onsubmit="event.preventDefault(); handleLogin();">
+            <h2>Student Login</h2>
+            <p>Need an account? <a href="register.html">Register here.</a></p>
+
+            <div>
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" name="username">
+            </div>
+
+            <div>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="password">
+            </div>
+
+            <button type="submit" class="login-btn">Log In</button>
+            <span id="loginError" class="error"></span>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

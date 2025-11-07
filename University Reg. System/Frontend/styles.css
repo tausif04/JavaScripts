@@ -1,0 +1,117 @@
+/* frontend/style.css */
+
+/* Ensures the body takes full height and perfectly centers the content */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+
+    /* CRITICAL for centering a single form */
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    min-height: 100vh;
+    /* Full viewport height */
+    margin: 0;
+}
+
+/* We don't need the flex container anymore, but we'll use 'container'
+   as the wrapper for consistency and to hold the form in the center. */
+.container {
+    display: block;
+    /* No longer a flex container */
+    width: 100%;
+    max-width: 400px;
+    /* Keep the card width reasonable */
+}
+
+/* Style for the card background and shadow, applied to both forms */
+#registrationForm,
+#loginForm {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    /* Dimensional Card Shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    box-sizing: border-box;
+    /* Ensures padding doesn't widen the form */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 0.9em;
+}
+
+/* General form element spacing */
+#registrationForm>div,
+#loginForm>div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+/* Error message and input styling */
+.error {
+    color: #dc3545;
+    font-size: 0.85em;
+    margin-top: 5px;
+    display: block;
+}
+
+.input-error {
+    border-color: #dc3545 !important;
+    border-width: 2px !important;
+}
+
+/* Button styling */
+button[type="submit"] {
+    width: 100%;
+    /* Full width button for better mobile usability */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Specific button colors */
+#registrationForm button {
+    background-color: #28a745;
+}
+
+#loginForm button {
+    background-color: #007bff;
+}
+
+#registrationForm button:hover {
+    background-color: #218838;
+}
+
+#loginForm button:hover {
+    background-color: #0056b3;
+}

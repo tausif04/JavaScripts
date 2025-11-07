@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form id="registrationForm" onsubmit="event.preventDefault(); handleRegistration();">
+            <h2>Register Student</h2>
+            <p>Already have an account? <a href="login.html">Log In here.</a></p>
+
+            <div>
+                <label for="regName">Username:</label>
+                <input type="text" id="regName" name="username">
+                <span id="nameError" class="error"></span>
+            </div>
+
+            <div>
+                <label for="regEmail">Email:</label>
+                <input type="text" id="regEmail" name="email">
+                <span id="emailError" class="error"></span>
+            </div>
+
+            <div>
+                <label for="regPassword">Password:</label>
+                <input type="password" id="regPassword" name="password">
+                <span id="passwordError" class="error"></span>
+            </div>
+
+            <div>
+                <label for="regConfirmPassword">Confirm Password:</label>
+                <input type="password" id="regConfirmPassword" name="confirmPassword">
+                <span id="confirmPasswordError" class="error"></span>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
